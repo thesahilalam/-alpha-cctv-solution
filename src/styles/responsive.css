@@ -1,0 +1,151 @@
+/* Responsive rules: tablet and mobile overrides only. */
+
+@media (max-width: 1050px) {
+    .container { width: min(1200px, calc(100% - 34px)); }
+
+    .hero-copy { width: 63%; }
+    .hero h1 { font-size: 39px; }
+    .hero-side-card { top: 35px; left: 60%; }
+
+    .service-brand-grid { grid-template-columns: 1.6fr 1fr; gap: 22px; }
+    .service-mini-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .service-mini { min-height: 78px; }
+
+    .projects-layout { grid-template-columns: 1fr; }
+    .enquiry-panel { min-height: 250px; }
+    .project-card img { height: 145px; }
+
+    .nav-wrap { gap: 16px; }
+    .brand img { width: 190px; height: 64px; }
+    .nav-menu { gap: 16px; }
+    .site-header .nav-cta { padding: 10px 14px; font-size: 13px; }
+}
+
+@media (max-width: 850px) {
+    .nav-wrap { position: relative; min-height: 66px; }
+    .brand { min-width: 0; gap: 8px; }
+    .brand img { width: 175px; height: 58px; }
+
+    .menu-toggle { display: block; margin-left: auto; flex-shrink: 0; }
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: -14px;
+        right: -14px;
+        z-index: 50;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 22px 20px;
+        background: #fff;
+        box-shadow: 0 14px 22px rgba(12, 45, 75, 0.12);
+    }
+    .nav-menu.open { display: flex; }
+    .nav-link { padding: 13px 0; font-size: 14px; }
+    .nav-link.active::after { bottom: 5px; }
+    .site-header .nav-cta { align-self: flex-start; margin: 12px 0 0; padding: 10px 16px; font-size: 14px; }
+
+    .topbar-inner { width: calc(100% - 28px); }
+    .topbar-left { font-size: 10px; }
+    .topbar-right { gap: 10px; }
+    .topbar-right > span { display: none; }
+
+    .hero { min-height: 0; }
+    .hero-inner { min-height: 0; }
+    .hero-side-card, .remote-card { display: none; }
+
+    .service-brand-grid { grid-template-columns: 1fr; gap: 24px; }
+    .service-mini-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .brand-logo-tile { height: 54px; }
+    .projects-layout { gap: 22px; }
+    .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .project-card img { height: 135px; }
+    .coverage { align-items: flex-start; flex-direction: column; }
+    .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .contact-layout { grid-template-columns: 1fr; }
+    .page-hero { padding: 38px 0; }
+}
+
+@media (max-width: 760px) {
+    .container { width: calc(100% - 28px); }
+
+    /* Mobile hero: content first, image in a dedicated band below it. */
+    .hero { min-height: 0; }
+    .hero-photo {
+        inset: auto 0 0;
+        height: 190px;
+        z-index: -3;
+        background-position: center 45%;
+        background-size: cover;
+    }
+    .hero-shade {
+        inset: auto 0 0;
+        height: 190px;
+        z-index: -2;
+        background: linear-gradient(to bottom, #f5f8fc 0%, rgba(245, 248, 252, .12) 100%);
+    }
+    .hero-inner { padding-top: 30px; padding-bottom: 190px; }
+    .hero-copy { width: 100%; padding: 0; }
+    .hero h1 { font-size: clamp(32px, 7vw, 40px); line-height: 1.1; letter-spacing: -1px; }
+    .hero-description { max-width: 540px; }
+
+    .trust-pills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-width: 100%; }
+    .trust-pill { min-width: 0; padding: 10px 8px; gap: 7px; }
+    .trust-pill b, .trust-pill small { font-size: 10px; }
+
+    .quick-info { padding-top: 30px; padding-bottom: 30px; }
+    .service-mini { min-height: 105px; }
+    .projects-enquiry { padding: 22px 0 26px; }
+
+    .topbar-inner { gap: 8px; }
+    .topbar-left { white-space: normal; line-height: 1.3; gap: 5px; }
+    .topbar-left i { display: none; }
+    .topbar-right { flex-shrink: 0; gap: 10px; }
+}
+
+@media (max-width: 560px) {
+    .topbar-left { max-width: 72%; font-size: 9px; }
+    .topbar-right { gap: 8px; }
+    .topbar-right a { font-size: 11px; }
+    .topbar-right a span { display: none; }
+
+    .hero-inner { padding-top: 26px; }
+    .hero h1 { font-size: 32px; letter-spacing: -1px; }
+    .hero-description { font-size: 13px; }
+    .hero-actions { display: grid; grid-template-columns: 1fr; }
+    .hero-actions .btn { width: 100%; }
+    .hero-photo, .hero-shade { height: 170px; }
+    .hero-inner { padding-bottom: 170px; }
+
+    .section-heading { gap: 9px; }
+    .section-heading h2 { font-size: 14px; }
+    .section-heading > a { font-size: 10px; }
+    .heading-line { width: 22px; }
+
+    .service-mini-grid { gap: 7px; }
+    .service-mini { min-height: 84px; }
+    .service-mini > span { font-size: 24px; }
+    .service-mini b { font-size: 9px; }
+    .brand-logo-tile { height: 48px; }
+
+    .enquiry-panel { grid-template-columns: 1fr; padding: 16px; }
+    .enquiry-aside { padding: 0; }
+    .enquiry-aside h3 br { display: none; }
+    .enquiry-aside ul { grid-template-columns: 1fr; }
+    .project-card img { height: 110px; }
+    .project-card b { font-size: 10px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .content-section { padding: 30px 0 42px; }
+    .contact-box { padding: 18px; }
+    .footer-links { gap: 12px; }
+}
+
+@media (max-width: 360px) {
+    .container { width: calc(100% - 24px); }
+    .brand img { width: 155px; height: 54px; }
+    .menu-toggle { padding: 6px; }
+    .trust-pill { gap: 5px; }
+    .trust-pill b, .trust-pill small { font-size: 9px; }
+    .project-grid { gap: 7px; }
+}

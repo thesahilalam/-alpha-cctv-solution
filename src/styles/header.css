@@ -1,0 +1,195 @@
+/* ========================================
+   ALPHA CCTV SOLUTION — HEADER STYLES
+   ======================================== */
+
+/* ---------- TOP CONTACT BAR ---------- */
+
+.topbar {
+    background: #10335e;
+    color: #f4f8ff;
+    font-size: 11px;
+    min-height: 34px;
+}
+
+.topbar-inner,
+.topbar-left,
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-inner {
+    min-height: 34px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.topbar-left {
+    gap: 9px;
+    white-space: nowrap;
+}
+
+.topbar-left > span {
+    font-size: 17px;
+}
+
+.topbar-left i {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 3px;
+    background: #8ca2bd;
+}
+
+.topbar-right {
+    gap: 15px;
+}
+
+.topbar-right > a,
+.topbar-right > span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.topbar-right a:hover {
+    color: #8ce4c1;
+}
+
+.topbar .whatsapp-icon {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+/* ---------- MAIN HEADER ---------- */
+
+.site-header {
+    position: relative;
+    z-index: 20;
+    background: #ffffff;
+    box-shadow: 0 3px 16px rgba(12, 45, 75, 0.06);
+}
+
+.nav-wrap {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+/* ---------- BRAND / LOGO ---------- */
+
+.brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex-shrink: 0;
+}
+
+.brand-mark {
+    display: none;
+}
+
+.brand img {
+    display: block;
+    width: 235px;
+    height: 72px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-link {
+    position: relative;
+    padding: 25px 0;
+    color: #233951;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #1555a0;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: #1555a0;
+}
+
+
+/* ---------- WHATSAPP / QUOTE BUTTON ---------- */
+
+.nav-cta {
+    margin-left: 6px;
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 13px;
+    white-space: nowrap;
+    border-radius: 9px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nav-cta .wa-icon {
+    font-size: 18px;
+}
+
+.site-header .nav-cta {
+    gap: 10px;
+    padding: 12px 22px;
+    min-height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.whatsapp-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.topbar .whatsapp-icon {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* ---------- MOBILE MENU BUTTON ---------- */
+
+.menu-toggle {
+    display: none;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 5px 0;
+    background: #102f57;
+    transition: background 0.2s ease;
+}

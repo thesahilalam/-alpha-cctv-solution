@@ -1,0 +1,88 @@
+.page-hero{background:linear-gradient(120deg,#eef4fb,#f8fbff);padding:54px 0 48px;border-bottom:1px solid #e7edf4}.page-hero h1{font:800 clamp(30px,4vw,44px)/1.15 Manrope,sans-serif;letter-spacing:-1px;margin:0 0 12px;color:#112f54}.page-hero p{max-width:700px;color:#5c6d81;margin:0}.content-section{padding:42px 0 58px}.content-section h2{font:800 22px Manrope,sans-serif;margin:0 0 12px}.content-section p{color:#596b80}.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.info-card{padding:22px;border:1px solid var(--line);border-radius:13px;background:#fff;box-shadow:0 5px 18px #102f5707}.info-card .card-icon{font-size:28px;color:var(--blue)}.info-card h3{font:800 16px Manrope,sans-serif;margin:10px 0 7px}.info-card p{font-size:13px;margin:0}.product-note{background:#f3f7fb;border-left:4px solid var(--blue);padding:15px 18px;border-radius:7px;color:#52657a;font-size:13px;margin-top:24px}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px}.contact-box{border:1px solid var(--line);border-radius:14px;padding:24px;background:white;box-shadow:var(--shadow)}.contact-box h2{font:800 21px Manrope,sans-serif;margin-top:0}.contact-box .contact-form{gap:12px}.contact-box .contact-form input,.contact-box .contact-form select,.contact-box .contact-form textarea{height:auto;min-height:44px;padding:12px;border:1px solid #dce5ef;border-radius:8px;font-size:13px}.contact-box .contact-form textarea{min-height:100px;resize:vertical}.contact-box .form-submit{min-height:44px;font-size:13px}.contact-box .form-message{color:#167c4d}.contact-detail{padding:13px 0;border-bottom:1px solid var(--line)}.contact-detail b{display:block;color:#18385d}.contact-detail span{font-size:13px;color:#62758b}.plain-list{padding-left:20px;color:#596b80}.plain-list li{margin:8px 0}.privacy-copy h2{margin-top:26px}.privacy-copy p,.privacy-copy li{font-size:14px;line-height:1.8}
+
+
+/* Why Choose Alpha CCTV Solution */
+
+.why-choose {
+    padding: 48px 0;
+    background: #ffffff;
+}
+
+.why-intro {
+    margin: 12px 0 24px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.why-card {
+    padding: 22px 18px;
+    border: 1px solid #e5ebf2;
+    border-radius: 13px;
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(16, 47, 87, 0.08);
+}
+
+.why-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    background: #eaf2fc;
+    color: #205aa3;
+    font-size: 24px;
+}
+
+.why-card h3 {
+    margin: 0 0 9px;
+    color: #163252;
+    font-size: 15px;
+}
+
+.why-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+    .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.product-card {
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    background: #fff;
+}

@@ -1,11 +1,263 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Alpha CCTV Solution | CCTV Installation in Delhi NCR"
+  description="Professional CCTV installation, DVR/NVR setup, maintenance and security solutions across Delhi NCR."
+  activePage="home"
+>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div
+        class="hero-photo"
+        role="img"
+        aria-label="CCTV camera installed outside a building"
+      ></div>
+      <div class="hero-shade"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            RELIABLE <span>•</span> PROFESSIONAL <span>•</span> LOCAL <span>•</span>
+          </p>
+
+          <h1>
+            CCTV Installation &amp;<br />
+            Security Solutions<br />
+            <em>in Delhi NCR</em>
+          </h1>
+
+          <p class="hero-description">
+            Professional installation, DVR/NVR setup, maintenance and
+            surveillance solutions for homes and businesses.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/contact/">
+              ☎ &nbsp; Get Installation Quote <b>→</b>
+            </a>
+            <a
+              class="btn btn-outline"
+              href="https://wa.me/919971664916"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+  class="whatsapp-icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.47-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.45-9.91 9.92-9.91a9.84 9.84 0 0 1 7.01 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.46-4.45 9.91-9.91 9.91Zm5.44-7.42c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" />
+</svg> Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="trust-pills">
+            <div class="trust-pill">
+              <span class="pill-icon green">♢</span>
+              <span><b>6+ Years</b><small>Experience</small></span>
+            </div>
+            <div class="trust-pill">
+              <span class="pill-icon teal">♟</span>
+              <span><b>Skilled</b><small>Technicians</small></span>
+            </div>
+            <div class="trust-pill">
+              <span class="pill-icon blue">⚒</span>
+              <span><b>After-Sales</b><small>Support</small></span>
+            </div>
+            <div class="trust-pill">
+              <span class="pill-icon green">◉</span>
+              <span><b>Emergency</b><small>Repair Service</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES AND BRANDS -->
+    <section class="quick-info container">
+      <div class="section-heading">
+        <span class="heading-line"></span>
+        <h2>Our Services</h2>
+        <a href="/services/">View All Services <b>→</b></a>
+      </div>
+
+      <div class="service-brand-grid">
+        <div class="service-mini-grid">
+          <a class="service-mini" href="/services/"><span>⌂</span><b>Home CCTV<br />Installation</b></a>
+          <a class="service-mini" href="/services/"><span>▦</span><b>Office &amp; Shop<br />Installation</b></a>
+          <a class="service-mini" href="/services/"><span>▤</span><b>DVR/NVR<br />Setup</b></a>
+          <a class="service-mini" href="/services/"><span>⚒</span><b>Repair &amp;<br />Maintenance</b></a>
+          <a class="service-mini" href="/services/"><span>▯</span><b>Remote<br />Mobile Viewing</b></a>
+          <a class="service-mini" href="/services/"><span>◎</span><b>Biometric<br />Attendance</b></a>
+        </div>
+
+        <div class="brands-panel">
+          <div class="section-heading compact">
+            <span class="heading-line"></span>
+            <h2>Trusted Brands</h2>
+          </div>
+
+          <div class="brand-grid" aria-label="Brands we work with">
+            <div class="brand-logo-tile"><img src="/assets/images/branding/hikvision.svg" alt="Hikvision" /></div>
+            <div class="brand-logo-tile"><img src="/assets/images/branding/cp-plus.svg" alt="CP Plus" /></div>
+            <div class="brand-logo-tile"><img src="/assets/images/branding/dahua.svg" alt="Dahua" /></div>
+            <div class="brand-logo-tile"><img src="/assets/images/branding/prama.svg" alt="Prama" /></div>
+            <div class="brand-logo-tile"><img src="/assets/images/branding/tp-link.svg" alt="TP-Link" /></div>
+            <div class="brand-logo-tile"><img src="/assets/images/branding/d-link.svg" alt="D-Link" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS AND ENQUIRY -->
+    <section class="projects-enquiry">
+      <div class="container projects-layout">
+        <div class="projects">
+          <div class="section-heading">
+            <span class="heading-line"></span>
+            <h2>Our Recent Projects</h2>
+            <a href="/contact/">View Gallery <b>→</b></a>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <img src="/assets/images/projects/home-cctv.jpg" alt="Home CCTV installation" />
+              <b>Home CCTV Setup</b>
+            </article>
+            <article class="project-card">
+              <img src="/assets/images/projects/shop-cctv.jpg" alt="Shop surveillance installation" />
+              <b>Shop Surveillance</b>
+            </article>
+            <article class="project-card">
+              <img src="/assets/images/projects/office-cctv.jpg" alt="Office CCTV installation" />
+              <b>Office Installation</b>
+            </article>
+            <article class="project-card">
+              <img src="/assets/images/projects/warehouse-cctv.jpg" alt="Warehouse security installation" />
+              <b>Warehouse Security</b>
+            </article>
+          </div>
+
+          <p class="photo-note">
+            Replace these sample tiles with photos of actual completed installations.
+          </p>
+        </div>
+
+        <div class="enquiry-panel" id="contact">
+          <div class="enquiry-form-wrap">
+            <div class="enquiry-title">
+              <span class="heading-line mint"></span>
+              <h2>Request an Enquiry</h2>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <label class="sr-only" for="name">Your name</label>
+              <input id="name" name="name" placeholder="♟ Your Name" required />
+
+              <label class="sr-only" for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" placeholder="☎ Phone Number (10 digits)" required />
+
+              <label class="sr-only" for="area">Your area</label>
+              <input id="area" name="area" placeholder="⌖ Your Area (e.g. Okhla)" required />
+
+              <label class="sr-only" for="service">Select service</label>
+              <select id="service" name="service" required>
+                <option value="">▣ Select Service</option>
+                <option>Home CCTV Installation</option>
+                <option>Office / Shop CCTV Installation</option>
+                <option>DVR/NVR Setup</option>
+                <option>Repair &amp; Maintenance</option>
+                <option>Remote Mobile Viewing</option>
+                <option>Biometric Attendance</option>
+                <option>Other Enquiry</option>
+              </select>
+
+              <button class="btn btn-whatsapp form-submit" type="submit">
+                <svg
+  class="whatsapp-icon"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.47-8.42ZM12.06 21.8a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.46 4.45-9.91 9.92-9.91a9.84 9.84 0 0 1 7.01 2.91 9.85 9.85 0 0 1 2.9 7.02c0 5.46-4.45 9.91-9.91 9.91Zm5.44-7.42c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" />
+</svg> Send Enquiry on WhatsApp <b>→</b>
+              </button>
+              <p id="formMessage" class="form-message" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <div class="enquiry-aside">
+            <h3>Need CCTV<br />Installation?</h3>
+            <p>Let's discuss your requirements.</p>
+            <span class="aside-rule"></span>
+            <ul>
+              <li>♧ &nbsp; Quick response</li>
+              <li>♙ &nbsp; Professional guidance</li>
+              <li>⌖ &nbsp; Delhi NCR service area</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-choose section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <span class="heading-line"></span>
+          <h2>Why Choose Alpha CCTV Solution?</h2>
+        </div>
+
+        <p class="why-intro">
+          Reliable security solutions for homes and businesses across Delhi NCR.
+        </p>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <span class="why-icon">✦</span>
+            <h3>6+ Years of Experience</h3>
+            <p>Practical experience in CCTV installation and security solutions.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon">⌂</span>
+            <h3>Professional Installation</h3>
+            <p>Security camera installation for homes, shops, offices and warehouses.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon">▣</span>
+            <h3>Remote Mobile Viewing</h3>
+            <p>Get assistance setting up camera viewing on your mobile phone.</p>
+          </article>
+          <article class="why-card">
+            <span class="why-icon">✓</span>
+            <h3>After-Sales Support</h3>
+            <p>Maintenance, troubleshooting and CCTV repair assistance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section class="coverage container">
+      <div>
+        <p class="eyebrow">WHERE WE WORK</p>
+        <h2>Security support across Delhi NCR</h2>
+        <p>
+          Installation and on-site support in Delhi NCR, including Okhla,
+          Kalindi Kunj and South Delhi. Product enquiries are welcome from other locations too.
+        </p>
+      </div>
+      <a class="btn btn-primary" href="/contact/">Discuss Your Requirement →</a>
+    </section>
+  </main>
 </Layout>
+
+<script is:inline src="/js/config.js"></script>
+<script is:inline src="/js/contact-form.js"></script>
+<script is:inline src="/js/script.js"></script>

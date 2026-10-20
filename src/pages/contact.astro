@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contact Us | Alpha CCTV Solution"
+  description="Contact Alpha CCTV Solution for CCTV installation and security equipment enquiries."
+  activePage="contact"
+>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">LET'S DISCUSS YOUR REQUIREMENTS</p>
+        <h1>Contact Alpha CCTV Solution</h1>
+        <p>
+          Tell us what you need. We can discuss installation, repairs,
+          remote viewing, or product availability.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="contact-layout">
+        <div class="contact-box" id="enquiry">
+          <h2>Request an enquiry</h2>
+          <p>
+            Fill in your details. The form will prepare a WhatsApp message
+            once the business number is configured.
+          </p>
+
+          <form id="contactForm" class="contact-form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" placeholder="Full name" required />
+
+            <label for="phone">Phone number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              inputmode="numeric"
+              pattern="[6-9][0-9]{9}"
+              placeholder="10-digit mobile number"
+              required
+            />
+
+            <label for="area">Your area</label>
+            <input id="area" name="area" placeholder="e.g. Okhla, Delhi" required />
+
+            <label for="service">What do you need?</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Home CCTV Installation</option>
+              <option>Office / Shop CCTV Installation</option>
+              <option>DVR/NVR Setup</option>
+              <option>Repair &amp; Maintenance</option>
+              <option>Remote Mobile Viewing</option>
+              <option>Biometric Attendance</option>
+              <option>Product Enquiry</option>
+              <option>Other Enquiry</option>
+            </select>
+
+            <label for="details">Additional details (optional)</label>
+            <textarea
+              id="details"
+              name="details"
+              placeholder="Camera count, property type or issue"
+            ></textarea>
+
+            <button class="btn btn-whatsapp form-submit" type="submit">
+              ◉ Prepare WhatsApp Enquiry →
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact-box">
+          <h2>Business information</h2>
+          <p>
+            For accurate contact details, please confirm the business phone
+            number and full address before publishing.
+          </p>
+
+          <div class="contact-detail">
+            <b>Service area</b>
+            <span>Delhi NCR, including Okhla, Kalindi Kunj and South Delhi</span>
+          </div>
+
+          <div class="contact-detail">
+            <b>Business hours</b>
+            <span>To be confirmed by the business owner</span>
+          </div>
+
+          <div class="contact-detail">
+            <b>Services</b>
+            <span>CCTV installation, DVR/NVR setup, repairs, maintenance and remote viewing</span>
+          </div>
+
+          <div class="product-note">
+            This is a static website. The form does not store submissions on a
+            server; it prepares a WhatsApp message after the real number is
+            added in the configuration.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script is:inline src="/js/config.js"></script>
+<script is:inline src="/js/contact-form.js"></script>
